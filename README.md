@@ -19,4 +19,4 @@ I usually find myself adding the ability to use a database, add realtime-ness, i
 
 ## Roadmap
 
-There's no roadmap as such. I'll try to keep the libraries up to date, and will add a feature when I find myself using it often enough.
+There's no roadmap as such. I'll try to keep the libraries up to date, and will add a feature when I find myself using it often enough. I don't intend to turn this into a framework or one size fits all, just trying to be helpful to give new projects a leg up by providing a more complete starting point.
