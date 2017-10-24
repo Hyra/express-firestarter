@@ -13,9 +13,9 @@ This boilerplate app, based on the awesome Express Generator, comes bundled with
 
 The boilerplate code you get when you run the [express generator](https://expressjs.com/en/starter/generator.html) is absolute great. However, it's far from complete.
 
-I usually find myself adding abilities to use databases, realtime-ness, queueing and adding some sort of build tool. Rather than doing this every time I want to tinker on a new project and get lost, this boilerplate should be a nice starting point.
+I usually find myself adding the ability to use a database, add realtime-ness, implement queueing and write some sort of build script. Rather than doing this every time I want to tinker on a new project and get lost, this boilerplate should be a starting point.
 
-**I also don't want this repo to be bloatcode, so it only consists of things I use often**
+**At the same time I want to avoid bloatcode, so it will only consist of things I actually use often enough.**
 
 ## Roadmap
 
