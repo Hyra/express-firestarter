@@ -2,12 +2,14 @@
 
 This boilerplate app, based on the awesome Express Generator, comes bundled with some extra useful goodies:
 
-- MongoDB through Mongoose 🐤
-- Realtime through Socket.IO 🕰
-- Queueing through Kue (/w Redis) 🚀
-- Vue through .vue components 📦
-- Hot Module Replacement through magic 🔥
-- Buildscript through Makefile 🦄
+- MongoDB                              through Mongoose 🐤
+- Realtime                             through Socket.IO 🕰
+- Queueing                             through Kue (/w Redis) 🚀
+- Vue                                  through .vue components 📦
+- Hot Module Replacement               through magic 🔥
+- Services (such as mongo and redis    through Docker Compose 🐳
+- Worker process                       through concurrent processes 🔨
+- Buildscript                          through Makefile 🦄
 
 ## Reasoning
 
