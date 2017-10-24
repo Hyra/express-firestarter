@@ -15,6 +15,8 @@ The boilerplate code you get when you run the [express generator](https://expres
 
 I usually find myself adding abilities to use databases, realtime-ness, queueing and adding some sort of build tool. Rather than doing this every time I want to tinker on a new project and get lost, this boilerplate should be a nice starting point.
 
+**I also don't want this repo to be bloatcode, so it only consists of things I use often**
+
 ## Roadmap
 
 There's no roadmap as such. I'll try to keep the libraries up to date, and will add a feature when I find myself using it often enough.
