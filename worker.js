@@ -24,7 +24,7 @@ require('dotenv').config();
 //     done()
 // });
 
-if (production.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === 'production') {
     var socket = require('socket.io-client');
 } else {
     var socket = require('socket.io-client')('http://localhost:3000');
