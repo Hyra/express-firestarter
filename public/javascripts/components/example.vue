@@ -24,26 +24,15 @@ export default {
     mounted () {
         let that = this
         console.log(process.env.SOCKET_URL)
-        var socket = io.connect('http://localhost:3000')
-        var chat = io.connect('http://localhost:3000/' + this.slug)
-        setTimeout(() => {
-            console.log('hai')
-        }, 1000)
-        socket.on('hello', function (data) {
-            console.log(data)
-            //- socket.emit('my other event', { my: 'data' })
-        })
+
+        if(process.env.NODE_ENV === 'production') {
+            var socket = io.connect('https://' + location.hostname + '/', { reconnect: true, transports: ['websocket'], path: '/socket.io' })
+        } else {
+            var socket = io.connect('http://localhost:3000')
+        }
         chat.on('newpage', function (data) {
             console.log('data', data)
             that.pages.push(data)
-        })
-        socket.on('to_all', function (data) {
-            console.log(data)
-            //- socket.emit('my other event', { my: 'data' })
-        })
-        chat.on('to_chat', function (data) {
-            console.log('to_chat', data)
-            //- socket.emit('my other event', { my: 'data' })
         })
         console.log('mounted')
     }
