@@ -24,7 +24,11 @@ require('dotenv').config();
 //     done()
 // });
 
-var socket = require('socket.io-client')(process.env.SOCKET_URL);
+if (production.env.NODE_ENV === 'production') {
+    var socket = require('socket.io-client');
+} else {
+    var socket = require('socket.io-client')('http://localhost:3000');
+}
 
 setInterval(() => {
   console.log('emiting')
