@@ -5,3 +5,10 @@ Vue.component('example', require('./components/example.vue'));
 const app = new Vue({
   el: '#app'
 })
+
+var socket = io.connect('http://localhost:3000');
+//- var socket = io.connect('https://' + location.hostname + '/', { reconnect: true, transports: ['websocket'], path: '/socket.io' })
+
+socket.on('newpage', function (data) {
+  console.log(data);
+});
