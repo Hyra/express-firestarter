@@ -30,7 +30,7 @@ export default {
         } else {
             var socket = io.connect('http://localhost:3000')
         }
-        chat.on('newpage', function (data) {
+        socket.on('newpage', function (data) {
             console.log('data', data)
             that.pages.push(data)
         })
