@@ -24,12 +24,7 @@ require('dotenv').config();
 //     done()
 // });
 
-
-if(process.env.NODE_ENV === 'production') {
-    var socket = require('socket.io-client')('https://localhost/', { reconnect: true, transports: ['websocket'], path: '/socket.io' })
-} else {
-    var socket = require('socket.io-client')('http://localhost:3000');
-}
+var socket = require('socket.io-client')(process.env.SOCKET_URL)
 
 setInterval(() => {
   console.log('emiting', process.env.NODE_ENV)
