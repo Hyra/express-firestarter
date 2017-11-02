@@ -26,8 +26,8 @@ require('dotenv').config();
 
 var socket = require('socket.io-client')(process.env.SOCKET_URL);
 
-var rooms = ['1029', '3000', '4000'];
 setInterval(() => {
+  console.log('emiting')
   socket.emit('sample-message', {
     room: '',
     data: 'Hello from worker'
