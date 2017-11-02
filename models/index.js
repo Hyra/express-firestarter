@@ -6,7 +6,7 @@ var path = require('path')
 var mongoose = require('mongoose')
 
 mongoose.Promise = global.Promise
-var db = mongoose.connect(process.env.MONGODB_URL, { useMongoClient: true });
+var db = mongoose.connect(process.env.MONGODB_URI, { useMongoClient: true });
 
 fs
 .readdirSync(__dirname)
