@@ -6,8 +6,11 @@ const app = new Vue({
   el: '#app'
 })
 
-var socket = io.connect('http://localhost:3000');
-//- var socket = io.connect('https://' + location.hostname + '/', { reconnect: true, transports: ['websocket'], path: '/socket.io' })
+if(process.env.NODE_ENV === 'production') {
+    var socket = io.connect('https://' + location.hostname + '/', { reconnect: true, transports: ['websocket'], path: '/socket.io' })
+} else {
+    var socket = io.connect('http://localhost:3000');
+}
 
 socket.on('newpage', function (data) {
   console.log(data);
