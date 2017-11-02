@@ -32,7 +32,7 @@ if(process.env.NODE_ENV === 'production') {
 }
 
 setInterval(() => {
-  console.log('emiting')
+  console.log('emiting', process.env.NODE_ENV)
   socket.emit('sample-message', {
     room: '',
     data: 'Hello from worker'
