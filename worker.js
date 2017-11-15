@@ -32,4 +32,4 @@ setInterval(() => {
     room: '',
     data: 'Hello from worker'
   });
-}, 1000);
+}, 3000);

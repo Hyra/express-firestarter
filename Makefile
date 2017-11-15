@@ -2,7 +2,7 @@
 
 help:
 	echo
-	echo "Express FireStarter"
+	echo "Wulfdeck"
 
 with_arg:
 	echo "Test: " $(argument)
